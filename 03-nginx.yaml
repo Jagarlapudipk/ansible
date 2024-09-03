@@ -3,9 +3,11 @@
   become: true
   tasks: 
    - name: install nginx
-     ansible.builtin.package:
+     apt:
      name: nginx
-      state: present
+     state: present
+     
+
 
   
 
