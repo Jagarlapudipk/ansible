@@ -1,6 +1,6 @@
 - name: install nginx
   hosts: web
-  become: true
+  become: yes
   tasks: 
   - name: install nginx
     apt:
@@ -10,8 +10,9 @@
     service:
       name: nginx
       state: started
-
       
+
+
 
 
 
