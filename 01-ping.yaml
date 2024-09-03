@@ -1,6 +1,9 @@
-- name: variable to print
+- name: ping the server
   hosts: web
   tasks:
    - name: Ping the server
      ansible.builtin.ping:
+
+
+     
      
